@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
 .cover {
     background-image: url(../images/collegeLife.png);
     background-position: center;
@@ -6,6 +13,90 @@
     height: 80vh;
 }
 
-h1 {
-    color: rgb(102, 255, 0);
+.main {
+    padding-top: 25px;
+    margin: auto;
+    text-align: center;
+    max-width: 90%;
+    height: 100%;
+    background-color: rgb(232, 250, 250);
 }
+
+@media screen and (max-width: 700px) {
+    .main {
+        max-width: 100%;
+    }
+}
+
+
+/* footer section styling starts*/
+
+footer {
+    background: #212230;
+    height: 100%;
+    width: 100%;
+}
+
+footer .ftr {
+    padding: 7px 0;
+    text-align: center;
+    color: whitesmoke;
+}
+
+footer .ftr span a {
+    color: crimson;
+}
+
+
+/* footer section styling ends*/
+
+
+/* social Icons designs start */
+
+.social-icons {
+    display: block;
+}
+
+.social-icons i {
+    margin: 1px 5px;
+    font-size: 30px;
+}
+
+.social-icons .linkedIn {
+    color: #0059b4;
+    transition: all 0.3s ease-out;
+}
+
+.social-icons .linkedIn:hover {
+    color: rgb(182, 53, 53);
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #0059b4;
+}
+
+.social-icons .instagram {
+    color: #ff003b;
+    transition: all 0.3s ease-out;
+}
+
+.social-icons .instagram:hover {
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: #ff003b;
+}
+
+.social-icons .facebook {
+    color: #1673c0;
+    transition: all 0.3s ease-out;
+}
+
+.social-icons .facebook:hover {
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #1673c0;
+}
+
+
+/* social Icons designs ends */
