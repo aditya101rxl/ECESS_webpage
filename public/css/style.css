@@ -79,12 +79,11 @@ body {
     text-align: center;
     max-width: 90%;
     height: 100%;
-<<<<<<< HEAD
-    background-color: rgb(233, 236, 239);
+    /* <<<<<<< HEAD background-color: rgb(233, 236, 239);
     border: 1px solid transparent;
-=======
-    /* background-color: rgb(232, 250, 250); */  /* removed bg color for a while. */
->>>>>>> 4212ef00db281fd5efd1daa2b615c721627d7e3a
+    =======/* background-color: rgb(232, 250, 250); */
+    /* removed bg color for a while. */
+    /* >>>>>>>4212ef00db281fd5efd1daa2b615c721627d7e3a */
 }
 
 welcome {
