@@ -4,6 +4,22 @@
 
 <body>
 
+    <div class="jumbotron jumbotron-fluid">
+        <div class="row jumbo">
+            <div class="col-4">
+                <img src="/images/logoECESS.png" alt="logo" style="height: 250px; display: block; margin: auto;">
+            </div>
+            <div class="col-8">
+                <div class="container">
+                    <h1 class="display-4">ECESS</h1>
+                    <p class="lead">Electronic & communication Enginnering Student socity</p>
+                </div>
+                <welcome> Welcome&nbsp;<span>Guest.</span></welcome>
+                <welcome> Welcome To&nbsp;<span>ECESS.</span></welcome>
+            </div>
+        </div>
+    </div>
+
     {{!-- navbar from bootstrap start --}}
     {{>navbar}}
     {{!-- navbar from bootstrap end --}}
@@ -11,29 +27,23 @@
 
 
     {{!-- home section start --}}
-    <div class="cover">
-        <h1>
-            Here will be some stuffs
-        </h1>
+    <div class="cover" id="home">
+        <welcome> Welcome&nbsp;<span>Guest.</span></welcome>
+        <welcome> Welcome To&nbsp;<span>ECESS.</span></welcome>
     </div>
     {{!-- home section end --}}
 
 
-    <div class="main">
+
+    <div class="main" id="event">
 
         {{!-- events section start --}}
-
-        <h1>
-            Events will roll here
-        </h1>
-
+        {{>events}}
         {{!-- events section end --}}
 
 
         {{!-- Message section start --}}
-
-        {{!-- our code goes here for Message section --}}
-
+        {{>messege}}
         {{!-- Message section end --}}
 
 
@@ -46,11 +56,7 @@
 
         {{!-- Galary section start --}}
 
-        {{!-- our code goes here for Galary section --}}
-
         {{!-- Galary section end --}}
-
-
     </div>
 
 

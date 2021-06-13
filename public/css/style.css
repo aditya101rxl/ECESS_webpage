@@ -5,12 +5,72 @@
     box-sizing: border-box;
 }
 
+
+/* utility class in css start*/
+
+body {
+    background-color: rgb(233, 236, 239);
+}
+
+.jumbo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.head {
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.title {
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 190px;
+    height: 5px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+.title::after {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 20px;
+    padding: 5px;
+    color: crimson;
+    background: white;
+    transform: translateX(-50%);
+}
+
+
+/* utility class in css end*/
+
+
+/* cover photo start*/
+
 .cover {
     background-image: url(../images/collegeLife.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .main {
@@ -19,12 +79,110 @@
     text-align: center;
     max-width: 90%;
     height: 100%;
-    background-color: rgb(232, 250, 250);
+    background-color: rgb(233, 236, 239);
+    border: 1px solid transparent;
 }
 
+welcome {
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: -25px;
+    margin-left: 35px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(74, 173, 16);
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 6s infinite;
+    border-right: 3px solid black;
+}
+
+@keyframes text {
+    0% {
+        width: 0ch;
+    }
+    50% {
+        width: 16ch;
+    }
+}
+
+welcome span {
+    color: crimson;
+}
+
+
+/* cover photo end*/
+
+
+/* events section start*/
+
+.event {
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: rgb(243, 146, 146);
+    margin: 1% 5% 5% 5%;
+    border-style: groove;
+    border-width: 17px;
+    border-color: coral;
+    color: black;
+}
+
+
+/* events section end*/
+
+
+/* messege section styling start */
+
+.messege .respose {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+.messege img {
+    max-width: 350px;
+}
+
+
+/* messege section styling end */
+
+
+/* media query for responsive design */
+
 @media screen and (max-width: 700px) {
+    .cover {
+        height: 40vh;
+    }
     .main {
         max-width: 100%;
+    }
+    welcome {
+        margin-top: 20px;
+        margin-bottom: -25px;
+        margin-left: 25px;
+        font-size: 30px;
+        border-right: 2px solid black;
+    }
+    .card .row {
+        height: 40px;
+        font-size: 12px;
+    }
+    .head {
+        font-size: 11px;
+    }
+    .messege .respose {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .messege img {
+        max-width: auto;
+        max-height: 250px;
     }
 }
 
