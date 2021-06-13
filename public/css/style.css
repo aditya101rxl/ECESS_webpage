@@ -71,13 +71,33 @@ body {
 /* cover photo start*/
 
 .cover {
-    background-image: url(../images/collegeLife.png);
+    background-image: url(../images/c1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
     display: flex;
     flex-direction: column;
+    transition: 6s;
+    animation: animate 20s ease-in 3s infinite alternate-reverse forwards;
+}
+
+@keyframes animate {
+    0% {
+        background-image: url(../images/collegeLife.png);
+    }
+    25% {
+        background-image: url(../images/c1.jpeg);
+    }
+    50% {
+        background-image: url(../images/c2.jpeg);
+    }
+    75% {
+        background-image: url(../images/c3.jpeg);
+    }
+    100% {
+        background-image: url(../images/c4.jpeg);
+    }
 }
 
 .main {
@@ -130,7 +150,7 @@ welcome span {
     overflow-x: hidden;
     scroll-behavior: smooth;
     background-color: rgb(243, 146, 146);
-    margin: 1% 5% 5% 5%;
+    margin: 1% 5% 1% 5%;
     border-style: groove;
     border-width: 17px;
     border-color: coral;
@@ -211,6 +231,8 @@ footer {
 }
 
 footer .ftr {
+    display: block;
+    height: 200px;
     padding: 7px 0;
     text-align: center;
     color: whitesmoke;
