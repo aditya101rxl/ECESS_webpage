@@ -5,11 +5,78 @@
     box-sizing: border-box;
 }
 
+/* root font */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+/* root font ends */
+
+
+/* root colors */
+:root {
+    --primary: #b467fd;
+    --secondary: #C4B5FD;
+    --dark-grey: #6B7280;
+    --light-grey: #D1D5DB;
+    --text-color:#334155;
+}
+/* root colors ends */
+
+
+/* styling for title class */
+ body .title {
+    font-family: 'Poppins', sans-serif;
+    color:var(--text-color)
+ }
+/* styling for title class ends */
+
+
+/* navbar styling */
+nav .nav-link  {
+    color:white;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+/* navbar styling ends */
+
+ 
+/* message card styling */
+ .card {
+     background-color: var(--secondary);
+     color:var(--text-color);
+     border-radius: 0.5rem ;
+ }
+ /* message card styling ends */
+
+
+ /* our team styling  */
+.container-fluid {
+     padding: 15px;
+     background-color: var(--secondary);
+     margin: 2rem;
+     border-radius: 0.5rem;
+ }
+ /* our team styling ends */
+
+
+ /* gallery styling  */
+.carousel {
+    background-color: var(--secondary);
+    padding:15px;
+    margin:20px;
+    border-radius: 0.5rem;
+}
+/* gallary styling ends */
+
 
 /* utility class in css start*/
 
 body {
-    background-color: rgb(233, 236, 239);
+    background-color:rgb(233, 236, 239);
+    
+    font-family: 'Poppins', sans-serif;    
+    color: var(--text-color);
 }
 
 .jumbo {
@@ -64,7 +131,6 @@ body {
     transform: translateX(-50%);
 }
 
-
 /* utility class in css end*/
 
 
@@ -86,15 +152,19 @@ body {
     0% {
         background-image: url(../images/collegeLife.png);
     }
+
     25% {
         background-image: url(../images/c1.jpeg);
     }
+
     50% {
         background-image: url(../images/c2.jpeg);
     }
+
     75% {
         background-image: url(../images/c3.jpeg);
     }
+
     100% {
         background-image: url(../images/c4.jpeg);
     }
@@ -127,6 +197,7 @@ welcome {
     0% {
         width: 0ch;
     }
+
     50% {
         width: 16ch;
     }
@@ -139,6 +210,24 @@ welcome span {
 
 /* cover photo end*/
 
+/* event card styling */
+
+ .card-header {
+    background-color: var(--secondary);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif; 
+}
+
+.event h2 {
+    background-color: var(--secondary);
+}
+
+ .event .btn-link {
+    text-decoration: none;
+}
+
+/* event card styling ends */
+
 
 /* events section start*/
 
@@ -149,12 +238,14 @@ welcome span {
     overflow: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background-color: rgb(243, 146, 146);
+    background-color:var(--primary);
     margin: 1% 5% 1% 5%;
-    border-style: groove;
-    border-width: 17px;
-    border-color: coral;
-    color: black;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 0.5rem;
+    border-color: var(--primary);
+    color: var(--text-color);
+    margin: 2rem;
 }
 
 
@@ -185,17 +276,21 @@ welcome span {
         text-align: center;
         align-items: center;
     }
+
     .jumbo img {
         height: 150px;
         display: block;
         margin-left: -30px;
     }
+
     .cover {
         height: 40vh;
     }
+
     .main {
         max-width: 100%;
     }
+
     welcome {
         margin-top: 20px;
         margin-bottom: -25px;
@@ -203,43 +298,70 @@ welcome span {
         font-size: 30px;
         border-right: 2px solid black;
     }
+
     .card .row {
         height: 40px;
         font-size: 12px;
     }
+
     .head {
         font-size: 11px;
     }
+
     .messege .respose {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
+
     .messege img {
         max-width: auto;
         max-height: 250px;
     }
+
+    .col-lg-3 {
+        width: 50%;
+    
+    }
+
 }
 
 
 /* footer section styling starts*/
 
 footer {
-    background: #212230;
+    background: var(--primary);
     height: 100%;
     width: 100%;
+    padding:5rem;
+    font-weight: bold;
+    margin-top: 3rem;
+
 }
 
 footer .ftr {
     display: block;
-    height: 200px;
-    padding: 7px 0;
+    /* height: 200px; */
+    padding: 3px 3px;
     text-align: center;
     color: whitesmoke;
+
 }
 
 footer .ftr span a {
     color: crimson;
+}
+
+footer .social-icons .linkedIn {
+    color:white;
+}
+
+footer .social-icons .instagram {
+    color:white;
+}
+
+footer .social-icons .facebook {
+    color:white;
 }
 
 
@@ -258,19 +380,19 @@ footer .ftr span a {
 }
 
 .social-icons .linkedIn {
-    color: #0059b4;
+    color: white;
     transition: all 0.3s ease-out;
 }
 
 .social-icons .linkedIn:hover {
-    color: rgb(182, 53, 53);
+    color: white;
     cursor: pointer;
     border-radius: 2px;
-    background-color: #0059b4;
+    background-color: var(--dark-grey);
 }
 
 .social-icons .instagram {
-    color: #ff003b;
+    color:white;
     transition: all 0.3s ease-out;
 }
 
@@ -278,11 +400,11 @@ footer .ftr span a {
     color: white;
     cursor: pointer;
     border-radius: 7px;
-    background-color: #ff003b;
+    background-color: var(--dark-grey);
 }
 
 .social-icons .facebook {
-    color: #1673c0;
+    color: white;
     transition: all 0.3s ease-out;
 }
 
@@ -290,8 +412,42 @@ footer .ftr span a {
     color: white;
     cursor: pointer;
     border-radius: 50%;
-    background-color: #1673c0;
+    background-color: var(--light-grey);
 }
 
 
 /* social Icons designs ends */
+
+/* removed lining and color from social media links */
+a {
+    text-decoration: none;
+}
+/* removed lining and color from social media links */
+ 
+
+/* fixed containers allignment */
+.row {
+    
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+ .container-fluid {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* fixed containers allignment ends */
+
+/* cover photo styling  */
+.cover{
+    margin: 0.3rem;
+    border-radius: 0.5rem;
+}
+/* cover photo styling ends */
+
+
+
