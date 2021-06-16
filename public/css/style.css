@@ -64,6 +64,11 @@ body {
     transform: translateX(-50%);
 }
 
+.hoverEffect:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
 
 /* utility class in css end*/
 

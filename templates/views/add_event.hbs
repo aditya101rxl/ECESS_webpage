@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{!--
+
+<head>
+    <title>ECESS-Admin</title>
+</head> --}}
+{{>header}}
+
+<body>
+
+    <div class="container">
+        <h1 style="color: crimson; text-decoration: underline; text-align:center;">Only for ECESS-Admin</h1>
+
+        <h3 style="text-align: center; margin: 27px 0 0 0">-------Add Event-------</h3>
+        <form class="row" action="/add-event" method="POST">
+            <div class="col-md-8 row" style="margin: 11px 0;">
+                <label for="heading" class="col-sm-2 col-form-label">Heading: </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="heading" name="heading" required>
+                </div>
+            </div>
+            <div class="col-md-4 row" style="margin: 11px 0;">
+                <label for="date" class="col-sm-5 col-form-label">Date of Event: </label>
+                <div class="col-sm-7">
+                    <input type="date" class="form-control" id="date" name="date" required>
+                </div>
+            </div>
+            <div class="input-group" style="margin: 11px 0;">
+                <span class="input-group-text">Event's Details: </span>
+                <textarea class="form-control" aria-label="With textarea" rows="7" name="details" required></textarea>
+            </div>
+            <div class="row" style="margin: 11px 0;">
+                <label for="password" class="col-sm-2 col-form-label">Password: </label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+            </div>
+            <div class="col-12" style="margin: 11px 0;">
+                <button type="submit" class="btn btn-primary col-12">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    {{!--all scripts file start--}}
+    {{>scripts}}
+    {{!--all scripts file end--}}
+</body>
+
+</html>
