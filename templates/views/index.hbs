@@ -4,24 +4,27 @@
 
 <body>
 
-    <div class="jumbotron jumbotron-fluid">
-        <div class="row jumbo">
+    {{!-- Shifted navbar to top --}}
+
+    {{!-- navbar from bootstrap start --}}
+    {{>navbar}}
+    {{!-- navbar from bootstrap end --}}
+
+    <div class="jumbotron jumbotron-fluid ">
+        <div class="row jumbo py-4">
             <div class="col-4">
-                <img src="/images/logoECESS.png" alt="logo">
+                <img src="/images/purpleLogo.png" alt="logo">
             </div>
             <div class="col-8">
                 <div class="container">
                     <h1 class="display-4" style="font-weight: 400;">ECESS</h1>
-                    <p class="lead">Electronic & communication Engineering Student socity</p>
+                    <p class="lead">Electronics & Communication Engineering Student Society</p>
                 </div>
             </div>
         </div>
     </div>
 
     <div id="home" style=" display: block;"></div>
-    {{!-- navbar from bootstrap start --}}
-    {{>navbar}}
-    {{!-- navbar from bootstrap end --}}
 
 
 
@@ -31,8 +34,6 @@
         <welcome> Welcome To&nbsp;<span>ECESS.</span></welcome>
     </div>
     {{!-- home section end --}}
-
-
 
     <div class="main">
 
@@ -77,6 +78,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    {{!--
+    <script type="text/javascript">
+        $("#nav-main").collapse('hide');
+    </script> --}}
 </body>
 
 </html>
