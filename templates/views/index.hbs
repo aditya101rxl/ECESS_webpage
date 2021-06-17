@@ -7,12 +7,7 @@
 
 <body>
 
-    {{!-- Shifted navbar to top --}}
-
-    {{!-- navbar from bootstrap start --}}
-    {{>navbar}}
-    {{!-- navbar from bootstrap end --}}
-
+    {{!-- jumbotron is always at top to introduce someone/somethings --}}
     <div class="jumbotron jumbotron-fluid ">
         <div class="row jumbo py-4">
             <div class="col-4">
@@ -27,9 +22,12 @@
         </div>
     </div>
 
+    {{!-- for navigation --}}
     <div id="home" style=" display: block;"></div>
 
-
+    {{!-- navbar from bootstrap start --}}
+    {{>navbar}}
+    {{!-- navbar from bootstrap end --}}
 
     {{!-- home section start --}}
     <div class="cover">
@@ -46,12 +44,12 @@
 
 
         {{!-- Message section start --}}
-        {{>messege}}
+        {{>message}}
         {{!-- Message section end --}}
 
 
         {{!-- Galary section start --}}
-        {{!-- {{>gallery}} --}}
+        {{>gallery}}
         {{!-- Galary section end --}}
 
 
