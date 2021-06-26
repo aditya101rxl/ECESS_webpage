@@ -269,6 +269,18 @@ welcome span {
 /* message section styling end */
 
 
+/* out team styling start*/
+
+.profile {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+
+/* out team styling ends*/
+
+
 /* footer section styling starts*/
 
 footer {
