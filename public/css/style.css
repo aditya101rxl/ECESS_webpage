@@ -141,7 +141,7 @@ body {
 /* cover photo start*/
 
 .cover {
-    background-image: url(../images/NIT_AP.jpg);
+    background-image: url(../images/NIT-AP.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -149,7 +149,7 @@ body {
     display: flex;
     flex-direction: column;
     transition: 6s;
-    animation: animate 20s ease-in 3s infinite alternate-reverse forwards;
+    animation: animate 15s ease-in-out 2s infinite alternate-reverse backwards;
 }
 
 @keyframes animate {
@@ -165,9 +165,6 @@ body {
     100% {
         background-image: url(../images/image2.jpeg);
     }
-    /* 100% {
-        background-image: url(../images/c4.jpeg);
-    }  */
 }
 
 .main {
@@ -246,7 +243,7 @@ welcome span {
     border-radius: 0.5rem;
     border-color: var(--primary);
     color: var(--text-color);
-    margin: 2rem;
+    margin: 1.5rem;
 }
 
 
@@ -254,6 +251,10 @@ welcome span {
 
 
 /* message section styling start */
+
+.message {
+    margin: 1.5rem;
+}
 
 .message .respose {
     display: flex;
@@ -263,10 +264,25 @@ welcome span {
 
 .message img {
     max-width: 350px;
+    max-height: 400px;
 }
 
 
 /* message section styling end */
+
+
+/* gallery section styling start */
+
+#carouselExampleIndicators {
+    margin: 1.5rem;
+}
+
+#carouselExampleIndicators img {
+    height: 250px;
+}
+
+
+/* gallery section styling end */
 
 
 /* out team styling start*/
@@ -341,6 +357,12 @@ footer .social-icons .facebook {
         font-size: 30px;
         border-right: 2px solid black;
     }
+    .event {
+        margin: 1px;
+    }
+    .message {
+        margin: 1px;
+    }
     .card .row {
         height: 40px;
         font-size: 12px;
@@ -356,6 +378,14 @@ footer .social-icons .facebook {
     .message img {
         max-width: auto;
         max-height: 250px;
+        /* border-radius: 25% 25% 25% 25%; */
+    }
+    #carouselExampleIndicators {
+        margin: 1px;
+    }
+    #carouselExampleIndicators img {
+        height: 150px;
+        padding-bottom: 17px;
     }
     .col-lg-3 {
         width: 50%;
@@ -386,7 +416,8 @@ footer .social-icons .facebook {
 }
 
 .social-icons .linkedIn:hover {
-    color: white;
+    /* color: white; */
+    color: rgb(9, 124, 218);
     cursor: pointer;
     border-radius: 2px;
     background-color: var(--dark-grey);
@@ -398,7 +429,8 @@ footer .social-icons .facebook {
 }
 
 .social-icons .instagram:hover {
-    color: white;
+    /* color: white; */
+    color: crimson;
     cursor: pointer;
     border-radius: 7px;
     background-color: var(--dark-grey);
@@ -408,11 +440,11 @@ footer .social-icons .facebook {
     color: white;
     transition: all 0.3s ease-out;
     font-size: 27px;
-
 }
 
 .social-icons .facebook:hover {
-    color: white;
+    /* color: white; */
+    color: coral;
     cursor: pointer;
     border-radius: 50%;
     background-color: var(--light-grey);
