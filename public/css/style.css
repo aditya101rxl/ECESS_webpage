@@ -141,7 +141,7 @@ body {
 /* cover photo start*/
 
 .cover {
-    background-image: url(../images/c1.jpeg);
+    background-image: url(../images/NIT_AP.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -154,20 +154,20 @@ body {
 
 @keyframes animate {
     0% {
-        background-image: url(../images/collegeLife.png);
+        background-image: url(../images/NIT-AP.jpg);
     }
-    25% {
-        background-image: url(../images/c1.jpeg);
+    33% {
+        background-image: url(../images/NIT-JOTE.jpg);
     }
-    50% {
-        background-image: url(../images/c2.jpeg);
-    }
-    75% {
-        background-image: url(../images/c3.jpeg);
+    66% {
+        background-image: url(../images/collegeimage.jpg);
     }
     100% {
-        background-image: url(../images/c4.jpeg);
+        background-image: url(../images/image2.jpeg);
     }
+    /* 100% {
+        background-image: url(../images/c4.jpeg);
+    }  */
 }
 
 .main {
@@ -377,7 +377,7 @@ footer .social-icons .facebook {
 
 .social-icons i {
     margin: 1px 5px;
-    font-size: 30px;
+    font-size: 29px;
 }
 
 .social-icons .linkedIn {
@@ -407,6 +407,8 @@ footer .social-icons .facebook {
 .social-icons .facebook {
     color: white;
     transition: all 0.3s ease-out;
+    font-size: 27px;
+
 }
 
 .social-icons .facebook:hover {
